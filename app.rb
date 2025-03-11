@@ -15,13 +15,13 @@ get("/rock") do
   "scissors" => "paper" 
   }
   if @winner["rock"] == @hands
-    @result = "We win!"
+    @result = "We won!"
   elsif @hands == "rock"
     @result = "We tied!"
   else
     @result = "We lost!"
   end
-
+  
   erb(:rock)
 end
 
@@ -35,7 +35,7 @@ get("/paper") do
   "scissors" => "paper" 
   }
   if @winner["paper"] == @hands
-    @result = "We win!"
+    @result = "We won!"
   elsif @hands == "paper"
     @result = "We tied!"
   else
@@ -55,7 +55,7 @@ get("/scissors") do
   "scissors" => "paper" 
   }
   if @winner["scissors"] == @hands
-    @result = "We win!"
+    @result = "We won!"
   elsif @hands == "scissors"
     @result = "We tied!"
   else
